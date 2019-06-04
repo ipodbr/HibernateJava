@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration">
+<!--
+Este é o mapeamento da classe (objeto) que será inserido no banco de dados
+    * cada atributo = coluna da tabela
+    * o nome da classe = nome da tabela
+-->
+<hibernate-mapping>
+  <class name="Aluno" table="alunos">
+    <id column="alu_codigo" name="aluCodigo" type="integer"/>
+    <property column = "alu_nome" name="aluNome"/>
+    <property column = "alu_cidade" name="aluCidade"/>
+    <property column = "alu_fone" name="aluFone"/>
+    <property column = "alu_curso" name="aluCurso"/>
+  </class>
+</hibernate-mapping>
